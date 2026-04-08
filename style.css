@@ -1,36 +1,44 @@
+/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+/* Body setup */
 body {
-    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
-/* Navbar */
+/* Header Styling */
 header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    background: black;
-    padding: 10px;
-}
-
-nav a {
+    background-color: #333;
     color: white;
-    margin: 10px;
-    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
 }
 
-/* Sections */
-section {
-    height: 100vh; /* IMPORTANT */
+header h1 {
+    margin: 0;
+}
+
+/* Content Styling */
+.content {
+    margin-top: 60px; /* To avoid overlap with fixed header */
+}
+
+.item {
+    height: 100vh; /* Full viewport height */
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px;
 }
-
-#section1 { background: red; }
-#section2 { background: blue; }
-#section3 { background: green; }
