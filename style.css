@@ -1,1 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: black;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+/* Sections */
+section {
+    height: 100vh; /* IMPORTANT */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+#section1 { background: red; }
+#section2 { background: blue; }
+#section3 { background: green; }
