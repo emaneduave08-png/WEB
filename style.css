@@ -5,11 +5,12 @@
     box-sizing: border-box;
 }
 
-/* Body setup */
+/* Body Setup */
 body {
     font-family: Arial, sans-serif;
     overflow-x: hidden;
-    scroll-behavior: smooth; /* Smooth scroll */
+    scroll-behavior: smooth;
+    background-color: #fff; /* Set the background to white to avoid black */
 }
 
 /* Header Styling */
@@ -34,7 +35,7 @@ header h1 {
 }
 
 .item {
-    height: 100vh;
+    height: 100vh; /* Full viewport height */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,7 +56,7 @@ header h1 {
 
 /* Parallax Section Styling */
 .parallax {
-    background-image: url('images/bg.jpg'); /* Make sure this is the correct path */
+    background-image: url('images/bg.png'); /* Make sure the path is correct */
     background-attachment: fixed; /* Parallax effect */
     background-size: cover;
     height: 100vh;
@@ -67,5 +68,5 @@ header h1 {
 
 .parallax-content {
     text-align: center;
-    z-index: 10; /* Ensures content stays above background */
+    z-index: 10;
 }
