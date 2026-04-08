@@ -1,0 +1,71 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body setup */
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth; /* Smooth scroll */
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Content Styling */
+.content {
+    margin-top: 60px;
+}
+
+.item {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px;
+    opacity: 0; /* Start hidden */
+    transform: translateY(50px); /* Start below the screen */
+    transition: opacity 1s, transform 1s; /* Smooth transition */
+}
+
+/* Trigger the animation when in view */
+.item.visible {
+    opacity: 1;
+    transform: translateY(0); /* Move to the normal position */
+}
+
+/* Parallax Section Styling */
+.parallax {
+    background-image: url('images/your-image.jpg'); /* Make sure this is the correct path */
+    background-attachment: fixed; /* Parallax effect */
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.parallax-content {
+    text-align: center;
+    z-index: 10; /* Ensures content stays above background */
+}
